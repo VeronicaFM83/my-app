@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- MIGA DE PAN -->
+        <div class="row bg-secondary mx-auto">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Iniciar sesión</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main_login">
+        <div class="container p-0 m-0 mw-xl mh-100 mx-auto">
+            <!-- FORMULARIO -->
+            <form class="form-signin p-5 mb-4">
+                <div class="text-center mb-4">
+                    <img class="mb-4" id="logo" src="img/logo.png" alt="" width="150">
+                    <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+                    <p class="custom_desaparece">Inicia sesión para acceder a contenido exclusivo y realizar aportaciones</p>
+                </div>
+
+                <div class="form-label-group mw-md">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" class="form-control" placeholder="micorreo@email.com" required="" autofocus="">
+                </div>
+
+                <div class="form-label-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" class="form-control" placeholder="Contraseña" required="">
+                </div>
+
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="recordar"> Recordar
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-secondary btn-block" type="submit">Entrar</button>
+
+            </form>
+        </div>
+    </main>
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Páginas amigas</h5></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Dónde comprar</h5></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var main = document.getElementById("main");
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

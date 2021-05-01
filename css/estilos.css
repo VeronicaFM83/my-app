@@ -1,0 +1,469 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+/* GENERAL */
+body {
+    background-color: #f8dbdb;
+    min-height: 100% !important;
+    min-width: 360px;
+    font-family: Arial, sans-serif
+}
+
+
+h1, h2, h3, h4{
+	font-family: 'Roboto Slab', serif;
+}
+
+.custom_secciones a, .carousel-caption a {
+    color: white;
+    font-size: 1.2em;
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+.active {
+    color: white !important;
+}
+
+.custom_disabled {
+    background-color: lightgray !important;
+    color: #555 !important;
+}
+
+@media (max-height: 785px) {
+    .custom_desaparece{
+        display: none;
+    }
+}
+
+.bg-light {
+    border-radius: 16px;
+}
+
+.bg-secondary {
+    background-color: #555 !important;
+}
+
+
+
+/* Botones */
+.btn-warning {
+    background-color: rgba(255, 128, 46, 0.3);
+    color: brown;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-color: #FF5F4D;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-danger {
+    background-color: #555;
+    border: none;
+}
+
+.btn-danger.active {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger.active:focus {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:focus {
+    box-shadow: none;
+    background-color: #555;
+}
+
+/*Separador secciones */
+
+.separador-txt > span {
+    background-color: #FFF;
+    padding: 0.8em 1.2em;
+}
+
+.separador-txt {
+    border: 1px solid #FFF;
+    color: #6f6f6f;
+    font-size: 20px;
+    letter-spacing: .1em;
+    line-height: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+
+/*Paginación*/
+
+.custom_pag {
+    color: brown;
+    background-color: rgba(255, 128, 46, 0.3);
+}
+
+
+
+/* Navbar */
+.navbar-brand {
+    font-size: 2.25rem;
+}
+
+.nav-link {
+    color: #e3d6d6 !important;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid white;
+    color: white !important;
+}
+
+.dropdown-menu {
+    left: unset !important;
+}
+
+.dropdown-item {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.dropdown-menu a:hover {
+    color: #555 !important;
+}
+
+
+/* Miga de pan */
+
+.custom_migapan {
+    max-width: 1320px !important;
+}
+
+.custom_migapan a {
+    color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: white;
+    content: "/";
+}
+
+/* Ribbon */
+
+.custom_ribbon {
+    background-size: cover;
+    background-image: url(../img/ribbon_lana.jpg);
+    background-repeat: repeat-y;
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+    margin: 16px 0;
+    padding: 1em;
+    vertical-align: central;
+}
+
+@media (max-width: 400px) {
+    .custom_ribbon {
+        border-radius: unset;
+    }
+}
+
+/* Carrusel*/
+
+.carousel img {
+    max-width: 100%;
+}
+
+.carousel-caption p {
+   margin-bottom: 0;
+}
+/* Lo he desactivado porque leí que está desaconsejado modificar la relación de aspecto de las imágenes en los manuales de buenas prácticas
+@media (max-height: 650px) {
+    .carousel {
+        height: 240px !important;
+    }
+
+    .carousel img {
+        height: 100%;
+    }
+}
+*/
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+}
+
+.carousel-control-next {
+    /*rgba(255, 128, 46, 0.5)*/
+    background-image: linear-gradient(to left, rgba(255, 128, 46, 0.4) 0%, rgba(255, 255, 255, 0.01) 100%);
+    background-repeat: repeat-x;
+}
+
+.carousel-control-prev {
+    background-image: linear-gradient(to right, rgba(255, 128, 46, 0.4) 0%, rgba(255, 255, 255, 0.01) 100%);
+    background-repeat: repeat-x;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+
+#carouselFade {
+    max-width: min-content;
+    height: min-content !important;
+    margin: auto !important;
+    margin-top: 15px;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+#carouselFade img {
+    max-height: 350px;
+    max-width: 350px;
+}
+
+
+/* Header y footer*/
+header, footer {
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* Seccion Artículos */
+
+article .col {
+    position: relative;
+}
+
+.section {
+min-width: min-content;
+margin-bottom: .5rem !important;
+flex: 1 0 0;
+}
+
+.custom_secciones .col .custom_naranja {
+min-height: 100%;
+}
+
+.custom_naranja {
+    background-color: rgba(255, 128, 46, 0.25);
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+.custom_naranja h3 a:hover {
+    color: #FF5F4D;
+}
+
+.custom_naranja img {
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0 0 0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+
+.custom_naranja p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Listado artículos */
+.row.custom_articulos hr:first-child {
+    display: none !important;
+}
+
+.row.custom_articulos hr {
+    height: 3px;
+    color: #ccc;
+}
+
+.row.custom_articulos hr:last-child {
+    display: none !important;
+}
+
+.custom_img-title {
+    color: brown;
+    font-family: system-ui;
+    background-color: #f8dbdbd4;
+    max-width: fit-content;
+    border: dashed 1px white;
+    padding: 0px 2px;
+    font-style: italic;
+    border-radius: 5px;
+    float: right;
+}
+
+.custom_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.custom_articulos article .col {
+    max-width: fit-content;
+}
+
+.custom_articulos img {
+    max-width: 300px;
+    max-height: 200px;
+    border: 1px solid #ececec;
+}
+
+.custom_articulos a:hover {
+    opacity: 0.8;
+}
+
+.custom_secciones img:hover {
+    opacity: 0.5;
+}
+
+article {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.title a {
+    color: #FF5F4D;
+    text-decoration: none;
+}
+
+/* Artículo */
+.img-articulo {
+    float: left;
+    margin-right: 20px;
+}
+
+/*Formulario*/
+.form-control {
+    border: 0;
+}
+
+label {
+    margin: 7px 0;
+}
+
+.form-label-group {
+    margin-bottom: 2em;
+}
+
+/* Seccion Patrones */
+
+.custom_campo {
+    margin-top: 5px;
+    display: block;
+    line-height: 1.5;
+    background-color: #fff;
+    font-weight: 400;
+    border-radius: .25rem;
+    min-width: min-content;
+    padding: .375rem .75rem;
+}
+
+.custom_seccion h3 {
+    /*color: #FF6F61;*/
+    color: #F36153;
+    font-weight: 600;
+}
+
+.custom_seccion p {
+    max-height: 96px;
+    overflow: hidden;
+}
+
+/* Puntuacion estrellas */
+.custom_stars {
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+/* Detalle patron */
+
+.custom_resumen {
+    max-width: 80%;
+    margin: auto;
+}
+
+table {
+    border-collapse: unset;
+}
+
+table td {
+    padding: 4px;
+    background-color: white;
+    border-collapse: unset;
+}
+
+/* Login*/
+
+#main_login {
+    min-height: max-content;
+}
+
+@media (max-height: 785px) {
+    #logo {
+        max-width: 75px !important;
+    }
+
+    #main_login form {
+        padding: 10px !important;
+    }
+}
+
+#email{
+    max-width: 600px;
+}
+
+#password {
+    max-width: 600px;
+}
+
+

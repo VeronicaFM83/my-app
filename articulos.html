@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- MIGA DE PAN -->
+        <div class="row bg-secondary mx-auto" style="max-height: 38px;">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Artículos</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SECCIONES -->
+        <div class="row p-0">
+            <div class="wrap t3-sl t3-sl-1">
+                <div class="container mx-auto py-2">
+
+                    <div class="row mx-auto custom_secciones py-4">
+                        <div class="col text-center">
+                            <div class="custom_naranja">
+                                <h3><a href="#seccion1">Técnicas</a></h3>
+                                <p><a href="#seccion1"><img class="img-fluid" width="350" height="250" src="img/seccion1.jpg" alt="Técnicas de crochet"></a> <a href="articulo01.html"></a></p>
+
+                                <p>Técnicas básicas de crochet y tipos de puntos.</p>
+                            </div>
+                        </div>
+
+                        <div class="col text-center">
+                            <div class="custom_naranja">
+                                <h3><a href="#seccion2">Amigurumis</a></h3>
+                                <p><a href="#seccion2"><img class="img-fluid" width="350" height="250" src="img/seccion2.jpg" alt="Crear amigurumis"></a> <a href="articulo01.html"></a></p>
+
+                                <p>Fundamentos de la elaboración de amigurumis.</p>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="custom_naranja">
+                                <h3><a href="#seccion3">Materiales</a></h3>
+                                <p><a href="#seccion3"><img class="img-fluid" width="350" height="250" src="img/seccion3.jpg" alt="Materiales"></a> <a href="articulo01.html"></a></p>
+                                <p>Materiales imprescindibles y tipos de hilo.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="container p-0 m-0 mx-auto">
+
+        <!-- RIBBON -->
+        <div class="row">
+            <div class="custom_ribbon">
+                <h3 style="display:inline-block;">Artículos.</h3>
+                <span class="lead" style="display:inline-block;">
+                    Encuentra en nuestros artículos la información que necesitas para empezar tus labores.
+                </span>
+            </div>
+        </div>
+
+        <!-- ARTICULOS -->
+        <!-- Sección -->
+        <div class="separador-txt"><span id="seccion1">Técnicas de crochet</span></div>
+        <div class="row custom_articulos py-4 bg-light  mx-auto">
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto">
+                <div class="col" title="Técnicas">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art1.jpg" alt="Técnicas">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Técnicas</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Puntos básicos</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">10/03/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Aprende los puntos básicos para iniciarte en el mundo del ganchillo: punto bajo, punto alto, punto raso, […]</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto">
+                <div class="col" title="Técnicas">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art1.jpg" alt="Técnicas">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Técnicas</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Anillo mágico</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">18/03/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Cómo formar un anillo mágico y la mejor manera de cerrarlo.</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+        </div>
+        <!-- Sección -->
+        <div class="separador-txt"><span id="seccion2">Amigurumis</span></div>
+        <div class="row custom_articulos py-4 bg-light mx-auto">
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto">
+                <div class="col" title="Amigurumis">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art2.jpg" alt="Amigurumis">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Amigurumis</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Formas básicas</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">18/03/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Tutorial sobre las formas básicas de los amigurumis […]</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto">
+                <div class="col" title="Amigurumis">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art2.jpg" alt="Amigurumis">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Amigurumis</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Cómo bordar ojos y bocas</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">27/01/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Con unos sencillos pasos aprenderás a darle expresión a tus amigurumis […]</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+        </div>
+        <!-- Sección -->
+        <div class="separador-txt"><span id="seccion3">Materiales</span></div>
+        <div class="row custom_articulos py-4 bg-light  mx-auto">
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto flex-md-row">
+                <div class="col" title="Materiales">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art3.jpg" alt="Materiales">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Materiales</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Tipos y tamaños de agujas</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">07/02/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Dependiendo de la labor que vayas a emprender tendrás que utilizar diferentes agujas […]</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+            <!-- Artículo -->
+            <article class="row mx-auto flex-md-row">
+                <div class="col" title="Materiales">
+                    <a href="articulo01.html">
+                        <img class="img-fluid" width="300" height="169" src="img/art3.jpg" alt="Materiales">
+                        <div class="custom_overlay">
+                            <p class="custom_img-title">Materiales</p>
+                        </div>
+                    </a>
+                </div>
+                <header class="col">
+                    <h2 class="title">
+                        <a href="articulo01.html">Variedades de hilo</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">07/02/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <p>Lana, algodón, sintético, lana de merino, perlé... Existen gran variedad de hilos y calidades […]</p>
+                    <a class="btn btn-warning" href="articulo01.html" role="button">
+                        Ir al artículo
+                        <i class="bi bi-link"></i>
+                    </a>
+                    <br />
+                </header>
+            </article>
+            <hr />
+        </div>
+
+
+        <!-- PAGINACION -->
+        <nav aria-label="Page navigation" class="row">
+            <div class="col">
+                <ul class="pagination my-1">
+                    <li class="page-item">
+                        <a class="page-link custom_disabled" href="articulo01.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link custom_pag" href="articulo01.html">1</a></li>
+                    <li class="page-item">
+                        <a class="page-link  custom_disabled" href="articulo01.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-end my-1">
+                <!-- Volver arriba -->
+                <a href="#" class="btn btn-warning" role="button">
+                    <i class="bi bi-caret-up-fill"></i>
+                </a>
+            </div>
+        </nav>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100" style="margin-bottom:30px;">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Páginas amigas</h5></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Dónde comprar</h5></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center fixed" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>

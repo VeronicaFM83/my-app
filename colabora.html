@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- MIGA DE PAN -->
+        <div class="row bg-secondary mx-auto" style="max-height: 38px;">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Colabora</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <!-- RIBBON -->
+            <div class="row">
+                <div class="custom_ribbon">
+                    <h3 style="display:inline-block;">Colabora.</h3>
+                    <span class="lead" style="display:inline-block;">
+                        Envíanos tu patrón para que lo publiquemos y compartirlo con otr@s ganchiller@s.
+                    </span>
+                </div>
+            </div>
+            <!-- FORMULARIO -->
+            <form id="formulario" method="post">
+                <!-- Autor -->
+                <h3>Autor</h3>
+                <div class="form-row">
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Escribe tu nombre" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" class="form-control" placeholder="micorreo@email.com">
+                        </div>
+                    </div>
+                </div>
+                <!-- Info patrón -->
+                <br />
+                <h3>Información del patrón</h3>
+                <div class="form-row d-flex">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Tipo de patrón</label>
+                            <input type="text" class="form-control" list="items" placeholder="Selecciona o escribe">
+                            <datalist id="items">
+                                <option value="Amigurumi">Amigurumi</option>
+                                <option value="Ropa">Ropa</option>
+                                <option value="Accesorio">Accesorio</option>
+                            </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label>Dificultad del patrón:</label>
+                            <select class="form-control">
+                                <option value="">Selecciona</option>
+                                <option value="1">1 Muy fácil</option>
+                                <option value="2">2 Fácil</option>
+                                <option value="3">3 Media</option>
+                                <option value="4">4 Media-alta</option>
+                                <option value="5">5 Alta</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de hilo</label>
+                            <select class="form-control">
+                                <option value="">Selecciona</option>
+                                <option value="algodon">Algodón</option>
+                                <option value="lana">Lana</option>
+                                <option value="perle">Perlé</option>
+                                <option value="sintetico">Sintético</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label>Tamaño de hilo</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Nº de vueltas</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Tamaño de aguja</label>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Describe muy brevemente el patrón</label>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Conejo amigurumi a crochet">
+                        </div>
+                        <div class="form-group">
+                            <label>Indica los materiales necesarios</label>
+                            <textarea rows="2" class="form-control" placeholder="Hilos, agujas, ojos de seguridad u otros accesorios"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Detalla el patrón</label>
+                            <textarea rows="10" class="form-control" placeholder="Describe los puntos de cada vuelta"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row mx-auto my-4">
+                    <button type="button" class="btn btn-secondary ml-auto">
+                        <i class="fa fa-image"></i> <small>Añadir fotografías</small>
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>
+                            <input type="checkbox" value="derechos"> Soy el autor del patrón &nbsp;
+                        </label>
+                        <label>
+                            <input type="checkbox" value="derechos"> Cedo los derechos a <i>enRedArte</i>
+                        </label>
+                    </div>
+                    <div class="col text-end">
+                        <button type="submit" class="btn btn-success btn-lg ml-auto mr-4 my-2" onclick="">
+                            <i class="fa fa-save"></i> <span>Enviar</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100" style="margin-bottom:30px;">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Páginas amigas</h5></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Dónde comprar</h5></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center fixed" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var main = document.getElementById("main");
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

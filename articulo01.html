@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Miga de pan -->
+        <div class="row bg-secondary mx-auto">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="articulos.html">Artículos</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Artículo</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container p-0 m-0 mx-auto">
+        <!-- ARTICULOS -->
+        <!-- Sección -->
+        <div class="separador-txt"><span id="seccion1">Título de sección</span></div>
+        <div class="row py-4 bg-light mx-auto mb-3">
+            <!-- Artículo -->
+            <article class="row mx-auto">
+
+                <div class="col">
+                    <h2 class="title">
+                        <a href="#">Título de artículo</a>
+                    </h2>
+                    <p class="meta">
+                        <span class="custom_datos">10/03/2021</span>
+                        <span class="custom_datos">Verónica</span>
+                    </p>
+                    <hr />
+                    <img class="img-fluid img-articulo" width="350" height="250" src="img/seccion3.jpg" alt="Materiales">
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit eros, sodales id mollis nec, fringilla vel sem. Donec eleifend eu tortor ac ullamcorper. Duis tempor ex lorem, et tempus ex aliquet sed. Nam finibus condimentum diam lacinia volutpat. Suspendisse sagittis facilisis pulvinar. Donec ultrices ullamcorper urna, at lacinia est aliquet vitae. Sed porta diam vel mauris rutrum, et bibendum augue consectetur. Vivamus ut mollis urna.</p>
+
+                    <p>Ut dictum tortor id tincidunt dignissim. Curabitur sit amet tristique urna. Integer ultrices justo at tortor dapibus. Fusce tincidunt diam ac tortor faucibus interdum. Etiam consectetur cursus varius. Sed ullamcorper fringilla turpis eget convallis. Curabitur lectus odio, accumsan gravida tortor vel, rhoncus iaculis metus. Duis sed urna sit amet lorem mollis tristique. Donec scelerisque ex metus, quis pretium diam tempus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse porta leo ante, sed malesuada purus pellentesque ac. Sed vitae elit vulputate, blandit massa et, auctor ligula. Etiam eget consectetur metus. Aenean nulla dui, malesuada id purus nec, posuere porttitor mi.</p>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur velit eros, sodales id mollis nec, fringilla vel sem. Donec eleifend eu tortor ac ullamcorper. Duis tempor ex lorem, et tempus ex aliquet sed. Nam finibus condimentum diam lacinia volutpat. Suspendisse sagittis facilisis pulvinar. Donec ultrices ullamcorper urna, at lacinia est aliquet vitae. Sed porta diam vel mauris rutrum, et bibendum augue consectetur. Vivamus ut mollis urna.</p>
+
+                    <p>Ut dictum tortor id tincidunt dignissim. Curabitur sit amet tristique urna. Integer ultrices justo at tortor dapibus, eget congue lorem semper. Fusce tincidunt diam ac tortor faucibus interdum. Etiam consectetur cursus varius. Sed ullamcorper fringilla turpis eget convallis. Curabitur lectus odio, accumsan gravida tortor vel, rhoncus iaculis metus. Duis sed urna sit amet lorem mollis tristique. Donec scelerisque ex metus, quis pretium diam tempus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse porta leo ante, sed malesuada purus pellentesque ac. Sed vitae elit vulputate, blandit massa et, auctor ligula. Etiam eget consectetur metus. Aenean nulla dui, malesuada id purus nec, posuere porttitor mi.</p>
+
+
+                    <figure class="figure w-100">
+                        <img class="img-fluid w-100 mx-auto" src="img/articulo_img.jpg" alt="Imagen">
+                        <figcaption class="figure-caption text-center">Texto auxiliar foto</figcaption>
+                    </figure>
+
+                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Nullam at maximus augue, eu pharetra velit. Fusce euismod sodales quam lacinia dictum. Aliquam aliquet odio vitae lectus dictum dictum. Donec eget accumsan ipsum. Vivamus vitae nibh consectetur, bibendum orci a, auctor purus. Sed eget urna finibus, imperdiet quam quis, finibus turpis. Donec rhoncus facilisis massa, vel malesuada ligula. In augue libero, rhoncus in lobortis vel, finibus eu nunc. Quisque ornare interdum justo vitae accumsan. In hac habitasse platea dictumst. Suspendisse fringilla velit nisl, eget facilisis elit facilisis in. </p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100" style="margin-bottom:30px;">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Páginas amigas</h5></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Dónde comprar</h5></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center fixed" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var main = document.getElementById("main");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+
+</body>
+</html>

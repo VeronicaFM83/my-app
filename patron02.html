@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MIGA DE PAN -->
+        <div class="row bg-secondary mx-auto">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" aria-current="page"><a href="index.html">Inicio</a></li>
+                                <li class="breadcrumb-item" aria-current="page"><a href="patrones.html">Patrones</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Taza de café</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main" class="container mx-auto">
+
+        <!-- RIBBON -->
+        <div class="row">
+            <div class="custom_ribbon py-3 my-3">
+                <h3>Taza de café amigurumi</h3>
+            </div>
+        </div>
+
+        <!-- CARRUSEL -->
+        <div class="row p-0 my-2">
+            <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner w-auto">
+                    <div class="carousel-item active">
+                        <img src="img/cafe.jpg" class="d-block mx-auto img-rounded" alt="Foto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cafe2.jpg" class="d-block mx-auto img-rounded" alt="Foto">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+        <!-- TITULO -->
+        <div class="row text-justify my-3">
+            <br />
+            <div class="separador-txt"><span>Resumen</span></div>
+        </div>
+
+
+        <!-- Resumen manteriales -->
+
+        <div class="custom_resumen">
+            <h3>Información</h3>
+            <div class="row my-3 d-flex">
+                <div class="col">
+                    Tipo de patrón:
+                    <p class="custom_campo">Amigurumi</p>
+                </div>
+                <div class="col">
+                    Dificultad:
+                    <p class="custom_campo">1 Muy fácil</p>
+                </div>
+                <div class="col">
+                    Nº de piezas:
+                    <p class="custom_campo">2</p>
+                </div>
+            </div>
+
+            <div class="row my-3 d-flex">
+                <div class="col">
+                    Tamaño de hilo:
+                    <p class="custom_campo">4</p>
+                </div>
+                <div class="col">
+                    Tipo de hilo:
+                    <p class="custom_campo">Sintético o algodón</p>
+                </div>
+                <div class="col">
+                    Tamaño de aguja:
+                    <p class="custom_campo">3</p>
+                </div>
+            </div>
+            <hr />
+
+            <h3>Detalle de las piezas</h3>
+
+            <div class="row my-3 d-flex">
+                <div class="col">
+                    Descripción:
+                    <p class="custom_campo">Cuerpo</p>
+                </div>
+                <div class="col">
+                    Vueltas:
+                    <p class="custom_campo">x</p>
+                </div>
+                <div class="col">
+                    Unidades:
+                    <p class="custom_campo">1</p>
+                </div>
+            </div>
+
+            <div class="row my-3 d-flex">
+                <div class="col">
+                    Descripción:
+                    <p class="custom_campo">Asa</p>
+                </div>
+                <div class="col">
+                    Vueltas:
+                    <p class="custom_campo">x</p>
+                </div>
+                <div class="col">
+                    Unidades:
+                    <p class="custom_campo">1</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- TITULO -->
+        <div class="row text-justify my-3">
+            <br />
+            <div class="separador-txt"><span>Instrucciones</span></div>
+        </div>
+
+        <!-- Instrucciones -->
+
+        <div class="container">
+
+            <p>Las instrucciones son las mismas para todos los tamaños.&nbsp;Cuando haya una diferencia la indicaré claramente.</p>
+            <h2>Abreviaturas de los puntos</h2>
+            <ul>
+                <li>MC: círculo mágico</li>
+                <li>2 pb aum: 2 pb en el siguiente pt (aumentar en 1)</li>
+                <li>3 pb aum: 3 pb en el siguiente pt (aumentar en 2)</li>
+                <li>sc2tog: 2 sc juntos (disminuir en 1)</li>
+                <li>sc3tog: 3 pb juntos (disminuir en 2)</li>
+            </ul>
+            <p>Este patrón se realiza en una espiral de rondas continuas.</p>
+            <hr />
+            <h3>Cuerpo (hacer 1)</h3>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td> <p><strong>Fila #</strong></p></td>
+                            <td>
+                                <p><strong>Instrucciones</strong></p>
+                            </td>
+                            <td> <p><strong>Sts</strong></p></td>
+                        </tr>
+                        <tr><td> <p>R1</p></td><td> <p>MC de 4 pb</p></td><td> <p>4</p></td></tr>
+                        <tr><td> <p>R2</p></td><td> <p>3 pb inc × 4</p></td><td> <p>12</p></td></tr>
+                        <tr><td> <p>R3</p></td><td> <p>pb, 3 pb aum, [pb × 2, 3 pb inc] × 3, pb</p></td><td> <p>20</p></td></tr>
+                        <tr><td> <p>R4</p></td><td> <p>sc × 2, 3-sc inc, [sc × 4, 3-sc inc] × 3, sc × 2</p></td><td> <p>28</p></td></tr>
+                        <tr><td> <p>R5</p></td><td> <p>sc × 3, 3-sc inc, [sc × 6, 3-sc inc] × 3, sc × 3</p></td><td> <p>36</p></td></tr>
+                        <tr><td> <p>R6</p></td><td> <p>sc × 4, 3-sc inc, [sc × 8, 3-sc inc] × 3, sc × 4</p></td><td> <p>44</p></td></tr>
+                        <tr><td> <p>R7</p></td><td> <p>sc × 5, sc2tog, [sc × 9, sc2tog] × 3, sc × 4</p></td><td> <p>40</p></td></tr>
+                        <tr><td> <p>R8-13</p></td><td> <p>sc × 40</p></td><td> <p>40</p></td></tr>
+                        <tr><td> <p>R14</p></td><td> <p>sc × 4, sc3tog, [sc × 7, sc3tog] × 3, sc × 3</p></td><td> <p>32</p></td></tr>
+                        <tr><td> <p>R15</p></td><td> <p>sc × 3, sc3tog, [sc × 5, sc3tog] × 3, sc × 2</p></td><td> <p>24</p></td></tr>
+                        <tr>
+                            <td colspan="3">
+                                <p>Rellena bien. Coloque la nariz entre R11 y R12 en el medio de la cara. Si utiliza ojos grandes (mayores de 15 mm), coloque los ojos al mismo nivel que la nariz (entre R11 y R12). De lo contrario, agregue ojos una fila por encima de la nariz (entre R10 y R11).</p>
+                                <p>Los ojos se ven más lindos si están a ~ 2-3 pts de la nariz en cada lado. Pruebe la distancia que le parezca mejor y una vez que esté satisfecho con ella, fíjela en su lugar. ;Vea las imágenes como referencia.</p>
+                            </td>
+                        </tr>
+                        <tr><td> <p>R16</p></td><td> <p>sc × 2, sc3tog, [sc × 3, sc3tog] × 3, sc</p></td><td> <p>dieciséis</p></td></tr>
+                        <tr><td> <p>R17</p></td><td> <p>[sc, sc3tog] × 4</p></td><td> <p>8</p></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Coser los extremos para cerrar la brecha.</p>
+            <hr />
+            <h3>Patas</h3>
+            <table>
+                <tbody>
+                    <tr><td> <p><strong>Fila #</strong></p></td><td> <p><strong>Instrucciones</strong></p></td><td> <p><strong>Sts</strong></p></td></tr>
+                    <tr><td> <p>R1</p></td><td> <p>MC de 5 pb</p></td><td> <p>5</p></td></tr>
+                    <tr><td> <p>R2</p></td><td> <p>2 pb inc × 5</p></td><td> <p>10</p></td></tr>
+                    <tr><td> <p>R3-7</p></td><td> <p>sc × 10</p></td><td> <p>10</p></td></tr>
+                </tbody>
+            </table>
+            <p>Deja la cola larga.&nbsp;No rellenar</p>
+            <hr />
+            <h3>Orejas (hacer 2)</h3>
+            <table>
+                <tbody>
+                    <tr><td> <p><strong>Fila #</strong></p></td><td> <p><strong>Instrucciones</strong></p></td><td> <p><strong>Sts</strong></p></td></tr>
+                    <tr><td> <p>R1</p></td><td> <p>MC de 5 pb</p></td><td> <p>5</p></td></tr>
+                    <tr><td> <p>R2</p></td><td> <p>2-sc inc, sc, 2-sc inc, sc, 2-sc inc</p></td><td> <p>8</p></td></tr>
+                    <tr><td> <p>R3</p></td><td> <p>[mp, 2-sc inc] × 4</p></td><td> <p>12</p></td></tr>
+                    <tr><td> <p>R4</p></td><td> <p>[sc × 2, 2-sc inc] × 4</p></td><td> <p>dieciséis</p></td></tr>
+                    <tr><td> <p>R5</p></td><td> <p>[sc × 3, 2-sc inc] × 4</p></td><td> <p>20</p></td></tr>
+                </tbody>
+            </table>
+            <p>Deja la cola larga.&nbsp;No rellenar</p>
+
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100" style="margin-bottom:30px;">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Páginas amigas</h5></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h5>Dónde comprar</h5></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center fixed" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var main = document.getElementById("main");
+        /* JS para funcionamiento de galería */
+
+        $(document).ready(function () {
+
+            /* activate the carousel */
+            $("#modal-carousel").carousel({ interval: false });
+
+            /* change modal title when slide changes */
+            $("#modal-carousel").on("slid.bs.carousel", function () {
+                $(".modal-title")
+                    .html($(this)
+                        .find(".active img")
+                        .attr("title"));
+            });
+
+            /* when clicking a thumbnail */
+            $(".row .thumbnail").click(function () {
+                var content = $(".carousel-inner");
+                var title = $(".modal-title");
+
+                content.empty();
+                title.empty();
+
+                var id = this.id;
+                var repo = $("#img-repo .item");
+                var repoCopy = repo.filter("#" + id).clone();
+                var active = repoCopy.first();
+
+                active.addClass("active");
+                title.html(active.find("img").attr("title"));
+                content.append(repoCopy);
+
+                // show the modal
+                $("#modal-gallery").modal("show");
+            });
+
+        });
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

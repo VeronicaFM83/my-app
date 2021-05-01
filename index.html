@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Verónica Fernández" />
+    <meta name="description" content="Información para elaborar amigurumis de crochet" />
+    <meta name="keywords" content="Crochet, ganchillo, amigurumi" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>enRedArte - Mi web</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">enRedArte<img src="img/logo.png" alt="enRedArte" height="50" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Botón navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Artículos
+                            </a>
+                            <ul class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item nav-link" href="articulos.html"><b>Secciones</b></a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion1">Técnicas</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion2">Amigurumis</a></li>
+                                <li><a class="dropdown-item nav-link" href="articulos.html#seccion3">Materiales</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="patrones.html">Patrones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="colabora.html">Colabora</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- MIGA DE PAN -->
+        <div class="row bg-secondary mx-auto" style="max-height: 38px;">
+            <div class="container mw-md">
+                <div class="custom_migapan row text-light text-bottom mx-auto mw-md" style="padding-top:5px;">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item active border-bottom" aria-current="page">Inicio</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <span>Bienvenid@! <a href="login.html">Entra</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main class="container mx-auto">
+        <!-- CARRUSEL -->
+        <div class="row p-0">
+            <div class="carousel slide p-0" data-bs-ride="carousel" id="indexSlicer">
+                <div class="carousel-inner">
+                    <!-- Slider 1 -->
+                    <div class="carousel-item active h-100">
+                        <img src="img/carrusel.jpg" class="d-block w-100" alt="Imagen 1" title="Formas básicas">
+                        <div class="carousel-caption mx-auto" title="Ir al artículo">
+                            <a href="articulos.html#seccion2">
+                                <h3 class="mx-auto">Amigurumis</h3>
+                                <p class="font-weight-bold mx-auto fs-6">Formas básicas</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slider 2 -->
+                    <div class="carousel-item h-100">
+                        <img src="img/carrusel2.jpg" class="d-block w-100" alt="Imagen 2" title="Útiles imprescindibles">
+                        <div class="carousel-caption mx-auto" title="Ir al artículo">
+                            <a href="articulos.html#seccion3">
+                                <h3 class="mx-auto">Materiales</h3>
+                                <p class="font-weight-boldmx-auto fs-6">Útiles imprescindibles</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slider 3 -->
+                    <div class="carousel-item h-100">
+                        <img src="img/carrusel3.jpg" class="d-block w-100" alt="Imagen 3" title="Bordar caras">
+                        <div class="carousel-caption mx-auto" title="Ir al artículo">
+                            <a href="articulos.html#seccion2">
+                                <h3 class="mx-auto">Amigurumis</h3>
+                                <p class="font-weight-bold mx-auto fs-6">Bordar caras</p>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- Slider 4 -->
+                    <div class="carousel-item h-100">
+                        <img src="img/carrusel4.jpg" class="d-block w-100" alt="Imagen 4" title="Puntos básicos">
+                        <div class="carousel-caption mx-auto" title="Ir al artículo">
+                            <a href="articulos.html#seccion1">
+                                <h3 class="mx-auto">Técnicas</h3>
+                                <p class="font-weight-bold mx-auto fs-6">Puntos básicos</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#indexSlicer" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#indexSlicer" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Indicador inferior -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#indexSlicer" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#indexSlicer" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#indexSlicer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#indexSlicer" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIBBON -->
+        <div class="row">
+            <div class="custom_ribbon">
+                <span class="lead">
+                    Información sobre el mundo del crochet y los amigurumis. Un hobby con cada vez más adictos.
+                </span>
+            </div>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="row text-justify my-3">
+            <br />
+            <div class="separador-txt"><span>Últimos patrones</span></div>
+
+
+            <div class="custom_seccion section col shadow-sm bg-light p-5 mx-2">
+                <img src="img/cafe.jpg" class="img-thumbnail" alt="Taza de café amigurumi" title="Taza de café amigurumi">
+                <h3 class="my-2">Taza de café</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="button">
+                        Me gusta
+                        <i class="bi bi-heart"></i>
+                    </button>
+                    <a class="btn btn-warning" href="patron02.html" role="button">
+                        Ir al patrón
+                        <i class="bi bi-link"></i>
+                    </a>
+                </div>
+                <div class="custom_stars" title="Muy fácil">
+                    <p class="lead">Dificultad del patrón: </p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+            <div class="custom_seccion section col shadow-sm bg-light p-5 mx-2">
+                <img src="img/cactus.jpg" class="img-thumbnail" alt="Cactus amigurumi" title="Cactus amigurumi">
+                <h3 class="my-2">Cactus</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="button">
+                        Me gusta
+                        <i class="bi bi-heart"></i>
+                    </button>
+                    <a class="btn btn-warning custom_disabled" role="button">
+                        Ir al patrón
+                        <i class="bi bi-link"></i>
+                    </a>
+                </div>
+                <div class="custom_stars" title="Fácil">
+                    <p class="lead">Dificultad del patrón: </p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+            <div class="custom_seccion section col shadow-sm bg-light p-5 mx-2">
+                <img src="img/calabazas.jpg" class="img-thumbnail" alt="Calabaza amigurumi" title="Calabaza amigurumi">
+                <h3 class="my-2">Calabaza</h3>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="button">
+                        Me gusta
+                        <i class="bi bi-heart"></i>
+                    </button>
+                    <a class="btn btn-warning  custom_disabled" role="button">
+                        Ir al patrón
+                        <i class="bi bi-link"></i>
+                    </a>
+                </div>
+                <div class="custom_stars" title="Fácil">
+                    <p class="lead">Dificultad del patrón: </p>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="bg-danger">
+            <div class="container">
+                <div class="row m-0 w-100" style="margin-bottom:30px;">
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h4>Páginas amigas</h4></li>
+                            <li><a href="#">Página 1</a></li>
+                            <li><a href="#">Página 2</a></li>
+                            <li><a href="#">Página 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled text-center my-1">
+                            <li><h4>Dónde comprar</h4></li>
+                            <li><a href="#">Tienda 1</a></li>
+                            <li><a href="#">Tienda 2</a></li>
+                            <li><a href="#">Tienda 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-secondary text-light text-center fixed" style="max-height: 30px;">
+                <span>&copy; 2021 Verónica Fernández Menéndez</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- ESTO ES PARA USAR BOOTSTRAP EN LOCAL
+    <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
